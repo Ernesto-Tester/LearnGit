@@ -1,0 +1,109 @@
+**This is a new project**
+
+
+
+**Get Version of Git**
+git --version
+git -v
+
+**Git HELP**
+git -h
+
+
+--Step 1  Create a Repository in Git (Remote Repository).
+
+**BASIC COMMANDS**
+--Add New Line Here
+cd = Change Directory
+cd "Curso de git  y github" In case the name  of the folder contains spaces
+mkdir test  => Create a new folder in the path 
+ls => List all the files and folders on the path
+cd .. => Navigation one level back
+cd => Go to main path
+rmdir prueba => Delete a folder
+pwd= Display the full path of the current project
+touch= Create a empty file hello_git.txt crete a new file named helo_git.txt
+
+git config --global user.name "Ernesto Olaez"
+git config user.name  => Confirm the user
+
+git config --global user.email "Tester@gmail.com"
+
+
+-Rename by defaul the main branch / master
+git config --global init.defualtBranch main
+
+
+--Get the status on the repo
+git status
+
+--Add a new file on the repo
+git add mi-archivo.txt
+
+
+--Remove from stage area the file  (In case it was a mystake)
+ git rm --cached mi-archivo.txt
+
+
+--COMMIT
+git commit -m "Agregar archivo de texto"
+
+View the history
+git log
+
+---Clear the console
+git clear
+
+
+
+You press i, and you enter insert mode. You can navigate around the text and insert what ever you want.
+ When done, press Esc. This makes you exit insert mode.
+ Next you have to press :wq, which means to write and quit.
+
+
+config editor of the text for all the messages for commits
+git config --global core.editor "code --wait"
+
+
+#Update the last comment done in the commit
+git commit --amend
+
+#Undoing the last commit done in the repository
+git reset --soft HEAD~1
+
+
+#Create a Banch
+git branch version-javascript
+
+
+#change from branch
+git checkout version-javascript
+
+#Create a branch and start o use it
+git checkout -b version-python
+
+#How to rename a branch
+1 form:
+git branch -m version-js
+
+2 form: (Not needed to be in the branch to be renamed)
+git branch -m version-python version-py
+
+
+#how to delete a branch (Should be in main branch)
+git branch -d version-py
+
+
+#Create a commit in a branch
+
+
+#Display the changes --commits
+git log
+git log --oneline
+
+#Merge  branches
+Should be in the branch that should receive the fusion
+git merge texto-expandido
+
+
+
